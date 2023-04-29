@@ -1,12 +1,47 @@
-li{
-    font-size: 20px;
-    color: red;
-    background: blue;
+.nav{
+    display: flex;
+    padding: 1em;
     width: 100%;
-    list-style: none;
-    position: absolute;
-  }
-  
-  /* *{
     background: red;
-  } */
+    justify-content: space-between;
+}
+nav{
+    font-size: 20px;
+    color: yellow;
+    width: 100%;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.logo img{
+    max-width: 100px;
+    min-width: 50px;
+    max-height: 100px;
+}
+
+nav .link{
+    color: aliceblue;
+    text-decoration: none;
+    /* background: green; */
+    padding: 1em;
+    margin-left: 1em;
+    border-radius: 10px;
+}
+
+.login{
+    color: aliceblue;
+    text-decoration: none;
+    background: green;
+    padding: 1em;
+    margin-left: 10em;
+    border-radius: 10px;
+}
+
+.signUp{
+    color: aliceblue;
+    text-decoration: none;
+    background: green;
+    padding: 1em;
+    margin-left: 1em;
+    border-radius: 10px;
+}
