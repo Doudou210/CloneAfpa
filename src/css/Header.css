@@ -1,0 +1,12 @@
+li{
+    font-size: 50px;
+    color: red;
+    background: blue;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+  }
+  
+  /* *{
+    background: red;
+  } */
