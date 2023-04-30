@@ -1,0 +1,53 @@
+.wrapper{
+    position: relative;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: red;
+
+    width: 20%;
+    height: 20em;
+    margin: 0 auto;
+    margin-top: 1em;
+    backdrop-filter: blur(0.5em);
+    border: 2px solid sienna;
+    border-radius: 10px;
+}
+
+.material-symbols-outlined{
+    margin-right: -10em;
+    margin-top: -5em;
+    /* margin-top: -5em; */
+}
+
+.input_box .tag{
+    padding: 1;
+    margin: 0 auto;
+    color: white;
+    /* height: 10vh; */
+    margin-bottom: 3em;
+}
+
+.isClose{
+    display: none;
+}
+.wrapper .form__box{
+    width: 100%;
+    padding: 2em;
+}
+
+.wrapper h2{
+    font-size: 2em;
+    /* color: black; */
+}
+
+
+.btn{
+    margin-top: 1em;
+    padding: 0.5em;
+    width: 100%;
+    background: blue;
+    border-style: none;
+    border-radius: 5px;
+}

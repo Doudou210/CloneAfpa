@@ -1,10 +1,27 @@
-.header{
+header{
     display: flex;
     padding: 1em;
     width: 100%;
     background: red;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 200px) {
+    .nav__bar {
+        display: block;
+        font-size: 500;
+        margin-left: -1.5em;
+    }
+}
+
+@media screen and (min-width: 100px) {
+    img{
+        margin: 0;
+    }
+}
+
+
+    
 .nav__bar{
     font-size: 20px;
     color: yellow;
@@ -15,24 +32,38 @@
 
 img{
     max-width: 100px;
-    min-width: 50px;
     max-height: 100px;
 }
 
-.nav__bar .link{
+.nav__bar a{
+    position: relative;
     color: aliceblue;
     text-decoration: none;
     padding: 1em;
-    margin-left: 1em;
-    border-radius: 10px;
+    margin-left: 1.1em;
+    font-weight: 350;
 }
-.nav__bar .link::after{
-    background: green;
-    position: absolute;
+
+.nav__bar a::after{
     content: '';
-    width: 100%;
-    height: 3px;
+    position: absolute;
+    width: 75%;
+    height: 0.11em;
+    background: white;
     border-radius: 5px;
+    left: 0;
+    margin-left: 1em;
+    bottom: 15px;
+    transform: scaleX(0);
+
+    /* pour gérer la ligne transform*/
+    transform-origin: left;
+
+    transition: all 0.5s;
+}
+
+.nav__bar a:hover::after{
+    transform: scaleX(1);
 }
 
 .btnLogin{
@@ -47,6 +78,7 @@ img{
     cursor: pointer;
     transition: all 0.5s;
 }
+
 .btnLogin:hover{
     background: white;
     color: black;
