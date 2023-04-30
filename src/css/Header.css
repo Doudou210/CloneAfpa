@@ -1,11 +1,11 @@
-.nav{
+.header{
     display: flex;
     padding: 1em;
     width: 100%;
     background: red;
     justify-content: space-between;
 }
-nav{
+.nav__bar{
     font-size: 20px;
     color: yellow;
     width: 100%;
@@ -13,35 +13,42 @@ nav{
     text-align: center;
 }
 
-.logo img{
+img{
     max-width: 100px;
     min-width: 50px;
     max-height: 100px;
 }
 
-nav .link{
+.nav__bar .link{
     color: aliceblue;
     text-decoration: none;
-    /* background: green; */
     padding: 1em;
     margin-left: 1em;
     border-radius: 10px;
 }
-
-.login{
-    color: aliceblue;
-    text-decoration: none;
+.nav__bar .link::after{
     background: green;
-    padding: 0.5em;
-    margin-left: 10em;
-    border-radius: 10px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
 }
 
-.signUp{
+.btnLogin{
     color: aliceblue;
+    width: 7em;
     text-decoration: none;
-    background: green;
-    padding: 0.5em;
-    margin-left: 1em;
+    background: red;
+    padding: 1em;
+    margin-left: 10em;
     border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btnLogin:hover{
+    background: white;
+    color: black;
+    transform: scale(1);
 }

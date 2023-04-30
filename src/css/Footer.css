@@ -1,0 +1,11 @@
+.footer{
+    width: 100%;
+    background: yellow;
+    height: auto;
+}
+
+h1{
+    width: 100%;
+    color: aliceblue;
+    padding: 0.5em;
+}
