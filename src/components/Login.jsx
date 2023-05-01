@@ -45,7 +45,7 @@
 //     )
 // }
 
-
+function Login(){
     const wrapper = document.querySelector('.wrapper');
     const loginlink = document.querySelector('.login__link');
     const registerlink = document.querySelector('.register__link');
@@ -61,3 +61,5 @@
         wrapper.classList.remove('active');
         // console.log('active');
     });
+}
+export default Login;

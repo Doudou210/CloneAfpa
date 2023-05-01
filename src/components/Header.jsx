@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Header.css";
-import '../components/Login' ;
+import './Login' ;
 
 export default function Header(){
 
