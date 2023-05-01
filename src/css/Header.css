@@ -89,7 +89,7 @@ img{
 .btnLogin:hover{
     background: white;
     color: black;
-    transform: scale(1);
+    /* transform: scale(1); */
 }
 
 .wrapper{
@@ -100,24 +100,68 @@ img{
     align-items: center;
 
     width: 25%;
-    height: 25em;
+    height: 30em;
     margin: 0 auto;
 
     backdrop-filter: blur(0.5em);
     border: 2px solid sienna;
     border-radius: 10px;
     margin-top: 5em;
-
+    transition: height 0.2s ease;
 }
 
-.wrapper .form__box{
+.wrapper.active{
+    height: 35em;
+}
+
+.wrapper .form_box.login{
+    transition: all 0.15s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form_box.login{
+    transition: none;
+    transform: translateX(-30em);
+}
+
+
+.wrapper .form_box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(30em);
+    /* border: 2px solid sienna; */
+}
+
+.wrapper.active .form_box.resgister{
+    transition: all 0.15s ease;
+    transform: translateX(30em);
+}
+
+.wrapper .form_box{
     width: 100%;
     padding: 2em;
 }
 
-.wrapper h2{
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5em;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    border: 2px solid gold;
+    z-index: 1;
+}
+
+.form_box h2{
     font-size: 2em;
     text-align: center;
+    margin-top: -1em;
     color: rgb(82, 52, 52);
 }
 
@@ -126,8 +170,8 @@ img{
     width: 100%;
     height: 2em;
     border-bottom: 2px solid skyblue;
-    margin: 0 at;
     padding: 1em;
+    margin-top: 1em;
 }
 
 .input_box label{
@@ -160,21 +204,47 @@ img{
 }
 
 .btn{
-    margin-top: 1em;
-    padding: 0.5em;
+    padding: 1em;
     width: 100%;
     background: blue;
     color: white;
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
 }
 
-.remember-forgot{
-    justify-content: space-between;
-    display: flex;
-    margin: -2em 0 2em;
+.remember_forgot{
     font-size: 1em;
-    margin-top: 1em;
     font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember_forgot label{
+    margin-right: 2em;
+}
+
+.remember_forgot a{
+    text-decoration: none;
+}
+
+.remember_forgot a:hover{
+    text-decoration: underline;
+}
+
+.login__register{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.login__register a{
+    text-decoration: none;
+}
+
+.login__register a:hover{
+    text-decoration: underline;
+    color: antiquewhite;
 }
