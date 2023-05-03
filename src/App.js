@@ -11,18 +11,18 @@ import Login from './components/Login';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/> */}
       {/* <Login/> */}
       <Home/>
       {/* <Banner/> */}
-      <Footer/>
+      {/* <Footer/> */}
       
       <Routes>
         <Route path='/' component={Home}/>
         <Route path='/login' component={Login}/>
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,11 +1,63 @@
 .footer{
-    width: 100%;
-    background: yellow;
-    height: auto;
+    display: block;
 }
 
-h1{
+
+.beforefoot{
+    display: flex;
     width: 100%;
-    color: aliceblue;
-    padding: 0.5em;
+    background: rgba(230, 36, 36, 0.8);
+    height: auto;
+    margin-top: 5em;
+}
+
+.list{
+    display: flex;
+}
+
+h3{
+    text-align: center;
+}
+
+
+.contacts{
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactR{
+    width: 25%;
+}
+
+.contactR img{
+    max-width: 25px;
+    margin-left: 2.5em;
+}
+
+.contactV{
+    width: 50%;
+}
+.contactV p{
+    color: red;
+}
+
+.contactP{
+    width: 25%;
+}
+
+.afterfoot{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.afterfoot img{
+    max-width: 20em;
+    margin-left: 4em;
+
 }
