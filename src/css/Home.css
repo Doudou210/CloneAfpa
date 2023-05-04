@@ -12,10 +12,12 @@
     
     width: 30%;
     height: 464px;
-    left: 20px;
-    top: 166px;
     border-radius: 10px;
+}
 
+.particulier p{
+    margin-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .particulier a{
@@ -23,10 +25,15 @@
     text-transform: none;
     text-decoration: none;
     transition: all 0.5s;
+    margin-left: 1em;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 21px;
+    line-height: 3em;
 }
 .particulier a:hover{
     transform: scale(1.01);
-    color: white;
+    color: black;
 }
 
 .particulier h1{
@@ -37,22 +44,237 @@
 
 .alternance{
     width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    justify-content: space-between;
+    margin: 0 auto;
+    display: block;
+    
+    height: 464px;
+    left: 20px;
+    top: 166px;
+    border-radius: 10px;
+}
+.alternance h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px
 }
 
+.alternance p{
+    margin-left: 1em;
+}
+
+.alternance a{
+    display: block;
+    text-transform: none;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin-left: 1em;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 21px;
+    line-height: 3em;
+}
+.alternance a:hover{
+    transform: scale(1.01);
+    color: black;
+}
 
 .recrutement{
+    background: rgba(255, 255, 255, 0.5);
+    justify-content: space-between;
+    margin: 0 auto;
+    display: block;
+    
     width: 30%;
+    height: 464px;
+    left: 20px;
+    top: 166px;
+    border-radius: 10px;
 }
 
+.recrutement h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px
+}
 
-btn{
-    background: greenyellow;
+.recrutement p{
+    margin-left: 1em;
+}
+
+.recrutement a{
+    display: block;
+    text-transform: none;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin-left: 1em;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 21px;
+    line-height: 3em;
+    margin-top: -0.2em;
+}
+.recrutement a:hover{
+    transform: scale(1.01);
+    color: black;
+}
+
+.btn{
+    background: red;
+    color: white;
     border: none;
     text-align: center;
     justify-content: center;
     
-    width: 50%;
-    margin-top: 3em;
-    margin-left: 8em;
+    width: 70%;
+    margin-top: 5em;
+    height: 2.5em;
+    margin-left: 5em;
     border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+
+/* Deuxième section de tableau*/
+
+
+.recherche{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+
+.formation{
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    
+    height: 464px;
+    left: 20px;
+    top: 166px;
+    border-radius: 10px;
+}
+
+.btnF{
+    display: block;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    text-align: center;
+    
+    background: white;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.btnFr{
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    padding: 0.5em;
+    color: black;
+    text-align: center;
+    
+    border-radius: 10px;
+}
+
+.rencontre{
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    display: block;
+    
+    height: 464px;
+    left: 20px;
+    top: 166px;
+    border-radius: 10px;
+}
+
+.stats{
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    display: block;
+    
+    height: 464px;
+    left: 20px;
+    top: 166px;
+    border-radius: 10px;
+}
+
+
+
+/*Info*/
+
+.info{
+    background: rgba(255, 255, 255, 0.5);
+    width: 97%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.info .para{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info h2{
+    text-align: center;
+    /* margin-top: -2em; */
+}
+.barI{
+    background: black;
+    height: 0.2em;
+    width: 100%;
+}
+.bar{
+    display: block;
+    background: black;
+    height: 1em;
+    width: 0.2em;
+    margin-top: 1.2em;
+}
+
+.partenaires{
+    /* display: none; */
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+.partenaires h2{
+    text-align: center;
+    width: 100%;
+}
+
+.partenaires p {
+    width: 100%;
+    font-family: 'Arial';
+    font-style: normal;
+
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.list__img{
+    max-height: 100px;
+    display: flex;
 }
