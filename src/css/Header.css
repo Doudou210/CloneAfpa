@@ -2,7 +2,7 @@ header{
     display: flex;
     padding: 1em;
     width: 100%;
-    /* background: red; */
+    /* background: rgb(173, 56, 56); */
     justify-content: space-between;
     align-items: center;
     top: 0;
@@ -23,16 +23,6 @@ header{
     img{
         margin: 0;
     }
-} */
-
-    
-/* .nav__bar{
-    position: relative;
-    font-size: 1em;
-    color: yellow;
-    width: 100%;
-    text-decoration: none;
-    text-align: center;
 } */
 
 img{
@@ -103,7 +93,7 @@ img{
     height: 30em;
     margin: 0 auto;
 
-    backdrop-filter: blur(0.5em);
+    /* backdrop-filter: blur(0.5em); */
     border: 2px solid sienna;
     border-radius: 10px;
     margin-top: 5em;
@@ -206,12 +196,12 @@ img{
 .btn{
     padding: 1em;
     width: 100%;
-    background: blue;
+    background: red;
     color: white;
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    /* font-size: 1em; */
 }
 
 .remember_forgot{

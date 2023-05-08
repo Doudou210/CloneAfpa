@@ -1,65 +1,44 @@
-// import React from "react";
-// import "../css/Login.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
-// export default function Login(){
-//     return(
-//         <div className="wrapper">
-//                 <div className="form-box login">
-//                     <span>
-//                         <ion-icon className='icon__close' name="close-outline"></ion-icon>
-//                     </span>
-//                     <h2>Login</h2>
+export default function Login({setAlterne}){
 
-//                     <form action="#">
-//                         <div className="input_box">
-//                             <span className="icon">
-//                             <ion-icon name="mail"></ion-icon>
-//                             </span>
-//                             <input type="email" required/>
-//                             <label type="Email">Email</label>
-//                         </div>
+    return(
+        <div className="form_box login">
+            <span>
+                <ion-icon className='icon__close' name="close-outline"></ion-icon>
+            </span>
+            <h2>Login</h2>
 
-//                         <div className="input_box">
-//                             <span className="icon">
-//                             <ion-icon name="lock-closed"></ion-icon>
-//                             </span>
-//                             <input type="password" required/>
-//                             <label htmlFor="Password">Password</label>
-//                         </div>
+            <form action="#">
+                <div className="input_box">
+                    <span className="icon">
+                    <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required/>
+                    <label type="Email">Email</label>
+                </div>
 
-//                         <div className="remember_forgot">
-//                             <label><input className="check" type="checkbox"/>Remember me</label>
-//                             <a href="/">Forgot Password ?</a>
-//                         </div>
+                <div className="input_box">
+                    <span className="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required/>
+                    <label htmlFor="Password">Password</label>
+                </div>
 
-//                         <button className="btn" type="submit">Login</button>
+                <div className="remember_forgot">
+                    <label><input className="check" type="checkbox"/>Remember me</label>
+                    <Link to={"/"}>Forgot Password ?</Link>
+                </div>
 
-//                         <div className="login__register">
-//                             <p>Don't have an account ? <a href="/" className="register__link">Register</a></p>
-//                         </div>
+                <button className="btn" type="submit">Login</button>
 
-//                     </form>
-//                 </div>
-//             </div>
- 
-//     )
-// }
+                <div className="login__register">
+                    <p>Don't have an account ? <button className="register__link" onClick={()=>{setAlterne(false)}}>Register</button></p>
+                </div>
 
-function Login(){
-    const wrapper = document.querySelector('.wrapper');
-    const loginlink = document.querySelector('.login__link');
-    const registerlink = document.querySelector('.register__link');
-
-    registerlink.addEventListener('click', (e)=>{
-        e.preventDefault();
-        wrapper.classList.add('active');
-        // console.log('active');
-    });
-    
-    loginlink.addEventListener('click', (e)=>{
-        e.preventDefault();
-        wrapper.classList.remove('active');
-        // console.log('active');
-    });
+            </form>
+    </div>
+    )
 }
-export default Login;

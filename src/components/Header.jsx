@@ -1,8 +1,11 @@
 import React from "react";
 import "../css/Header.css";
-import './Login' ;
+import './LoginPage' ;
+import { Link } from "react-router-dom";
 
 export default function Header(){
+
+    // const [alterne, setAlterne] = useState(true)
 
     return(
         <div>
@@ -13,12 +16,12 @@ export default function Header(){
                     <a href="/">Formations</a>
                     <a href="/">Actualités</a>
                     <a href="/">Groupe Afpa</a>
-                    <button className="btnLogin" type="button">Login</button>
+                    <Link to={'/login'}> <button className="btnLogin" type="button">Login</button></Link>
                 </nav> 
             </header>
 
-            <div className="wrapper">
-                <div className="form_box login">
+            {/* <div className="wrapper">
+                {alterne ? <div className="form_box login">
                     <span>
                         <ion-icon className='icon__close' name="close-outline"></ion-icon>
                     </span>
@@ -49,11 +52,11 @@ export default function Header(){
                         <button className="btn" type="submit">Login</button>
 
                         <div className="login__register">
-                            <p>Don't have an account ? <a href="/" className="register__link">Register</a></p>
+                            <p>Don't have an account ? <button className="register__link" onClick={()=>{setAlterne(false)}}>Register</button></p>
                         </div>
 
                     </form>
-                </div>
+                </div> :
 
                 <div className="form_box register">
                     <span>
@@ -99,8 +102,8 @@ export default function Header(){
                         </div>
 
                     </form>
-                </div>
-            </div>
+                </div>}
+            </div> */}
         </div>
     )
 }

@@ -13,7 +13,7 @@ export default function Home(){
                     <a href="/">Devenez agent de restauratin Buffalo Grill</a>
                     <a href="/">Devenez Technicien-vendeur chez Decathion</a>
                     <a href="/">Devenez assistante de vie avec Oui Car</a>
-                    <button className="btn" type="text"> Découvrir plus</button>
+                    <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
 
                 <div className="alternance">
@@ -23,7 +23,7 @@ export default function Home(){
                     <a href="/">Trouvez votre entreprise</a>
                     <a href="/">Se former à l'Afpa</a>
                     <a href="/">Le choix en alternance</a>
-                    <button className="btn" type="text"> Découvrir plus</button>
+                    <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
 
                 <div className="recrutement">
@@ -33,23 +33,50 @@ export default function Home(){
                     <a href="/">Un recrutement encadré et maîtrisé</a>
                     <a href="/">Un service clé en main</a>
                     <a href="/">Une formation tutoral</a>
-                    <button className="btn" type="text">Découvrir plus</button>
+                    <button className="btnP" type="text">Découvrir plus</button>
                 </div>
             </div>
 
             <div className="recherche">
                 <div className="formation">
-                    <p>recherche formation</p>
-                    <input placeholder="votre metier, domaine" className="btnF"></input>
-                    <input placeholder="votre region" className="btnF"></input>
-                    <input placeholder="recherche" className="btnFr"></input>
+                    <h3>Recherche formation</h3>
+                    <input placeholder="Votre metier, domaine" className="btnF"></input>
+                    <input placeholder="Votre region" className="btnF"></input>
+                    <input placeholder="Recherche" className="btnF"></input>
                 </div>
 
                 <div className="rencontre">
-                    venez
+                    <h3>Venez nous rencontrer</h3>
+                    <p>Pour connaître les évènements proches de chez nous,
+                        renseignez votre ville ou votre code postal.
+                    </p>
+                    <input placeholder="Indiquez votre ville" className="btnF"/>
                 </div>
 
-                <div className="stats"></div>
+                <div className="stats">
+                    <div className="resultats">
+                        <h3>Nos résultats</h3>
+                        <span></span>
+                        <h1>84.6%</h1>
+                        <p>de réussite au titre professionnel</p>
+
+                        <span></span>
+                        <h1>71%</h1>
+                        <p> d'accès à l'emploi dans les 6 mois</p>
+
+                        <span></span>
+                        <h1>86%</h1>
+                        <p>de stagiaires satisfaits</p>
+                    </div>
+
+                    <div className="cata">
+                        <h3>L'Afpa c'est</h3>
+                        <h1>900</h1>
+                        <p>Formations catalogues</p>
+                        <h1>116</h1>
+                        <p>Centre de Formation</p>
+                    </div>
+                </div>
             </div>
 
             <div className="info">
