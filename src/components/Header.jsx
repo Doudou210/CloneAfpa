@@ -16,8 +16,8 @@ export default function Header(){
                     <a href="/">Formations</a>
                     <a href="/">Actualités</a>
                     <a href="/">Groupe Afpa</a>
-                    <Link to={'/login'}> <button className="btnLogin" type="button">Login</button></Link>
                 </nav> 
+                    <Link to={`/login`}> <button className="btnLogin" type="button">Login</button></Link>
             </header>
 
             {/* <div className="wrapper">

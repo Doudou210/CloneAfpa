@@ -12,16 +12,21 @@ header{
 }
 
 /* @media screen and (min-width: 200px) {
-    .nav__bar {
-        display: block;
-        font-size: 500;
+    header {
+        display: inline-flex;
+        font-size: 12px;
         margin-left: -1.5em;
+        background: red;
     }
-}
-
-@media screen and (min-width: 100px) {
-    img{
-        margin: 0;
+    nav{
+        flex-wrap: wrap;
+        display: block;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
     }
 } */
 
@@ -109,23 +114,23 @@ img{
     transform: translateX(0);
 }
 
-.wrapper.active .form_box.login{
+/* .wrapper.active .form_box.login{
     transition: none;
     transform: translateX(-30em);
-}
+} */
 
 
 .wrapper .form_box.register{
     position: absolute;
     transition: none;
-    transform: translateX(30em);
+    /* transform: translateX(0); */
     /* border: 2px solid sienna; */
 }
 
-.wrapper.active .form_box.register{
+/* .wrapper.active .form_box.register{
     transition: all 0.15s ease;
     transform: translateX(0em);
-}
+} */
 
 .wrapper .form_box{
     width: 100%;

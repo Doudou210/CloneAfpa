@@ -35,7 +35,8 @@ export default function Login({setAlterne}){
                 <button className="btn" type="submit">Login</button>
 
                 <div className="login__register">
-                    <p>Don't have an account ? <button className="register__link" onClick={()=>{setAlterne(false)}}>Register</button></p>
+                    <p>Don't have an account ? 
+                    <button className="register__link" onClick={()=>{setAlterne(false)}}>Register</button></p>
                 </div>
 
             </form>

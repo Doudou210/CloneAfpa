@@ -4,7 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from './page/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Login from './components/Login';
+import LoginPage from "./components/LoginPage";
 import Register from './components/Register';
 // import Banner from './components/Banner';
 
@@ -13,14 +13,14 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Login/>
+      <LoginPage/>
       <Home/>
       {/* <Banner/> */}
       <Footer/>
       
       <Routes>
         <Route path='/' component={Home}/>
-        <Route path='/login' component={Login}/>
+        <Route path='/loginpage' component={LoginPage}/>
         <Route path='/register' component={Register}/>
       </Routes>
     </div>
