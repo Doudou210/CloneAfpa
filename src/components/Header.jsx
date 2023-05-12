@@ -5,21 +5,24 @@ import { Link } from "react-router-dom";
 
 export default function Header(){
 
-    // const [alterne, setAlterne] = useState(true)
-
     return(
         <div>
             <header>
+
                 <img src="https://www.alternance-professionnelle.fr/wp-content/uploads/2020/09/LOGO-AFPA-VERT-PNG.png" alt="logo afpa" />
+
                 <nav className="nav__bar">
-                    <a href="/">Accueil</a>
-                    <a href="/">Formations</a>
-                    <a href="/">Actualités</a>
-                    <a href="/">Groupe Afpa</a>
-                </nav> 
-                    <Link to={`/login`}> <button className="btnLogin" type="button">Login</button></Link>
+                    <Link to={"/"}>Accueil</Link>
+                    <Link to={"/"}>Formations</Link>
+                    <Link to={"/"}>Actualités</Link>
+                    <Link to={"/"}>Groupe Afpa</Link>
+                </nav>
+
+                {/* Pour afficher le login */}
+                <Link to={`/login`}> <button className="btnLogin" type="button">Login</button></Link>
             </header>
 
+            {/*Voir le composant Login & Register*/}
             {/* <div className="wrapper">
                 {alterne ? <div className="form_box login">
                     <span>

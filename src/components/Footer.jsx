@@ -2,20 +2,18 @@ import React from "react";
 import "../css/Footer.css";
 
 export default function Footer(){
+
     return(
-        <div className="footer">
+        <div>
             <div className="beforefoot">
                 <h3>Pourquoi choisir l'AFPA</h3>
-                <div className="list">
+                <div className="choix">
                     <p>Un apprentissage en situation réelle de travail</p>
-                </div>
-                <div className="list">
+                
                     <p>Une gamme de formations ppur tous les publics</p>
-                </div>
-                <div className="list">
+                
                     <p>Une présence sur tout le territoire</p>
-                </div>
-                <div className="list">
+                
                     <p>Une offre d'hébergement et de restauration</p>
                 </div>
             </div>

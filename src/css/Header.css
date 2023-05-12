@@ -44,6 +44,7 @@ img{
     font-weight: 600;
 }
 
+/* Pour ajouter effet au survol */
 .nav__bar a::after{
     content: '';
     position: absolute;
@@ -98,21 +99,17 @@ img{
     height: 30em;
     margin: 0 auto;
 
-    /* backdrop-filter: blur(0.5em); */
+    backdrop-filter: blur(0.5em);
     border: 2px solid sienna;
     border-radius: 10px;
     margin-top: 5em;
     /* transition: height 0.2s ease; */
 }
 
-.wrapper.active{
-    height: 35em;
-}
-
-.wrapper .form_box.login{
+/* .wrapper .form_box.login{
     transition: all 0.15s ease;
     transform: translateX(0);
-}
+} */
 
 /* .wrapper.active .form_box.login{
     transition: none;
@@ -120,12 +117,12 @@ img{
 } */
 
 
-.wrapper .form_box.register{
+/* .wrapper .form_box.register{
     position: absolute;
     transition: none;
-    /* transform: translateX(0); */
-    /* border: 2px solid sienna; */
-}
+    transform: translateX(0);
+     border: 2px solid sienna;
+} */
 
 /* .wrapper.active .form_box.register{
     transition: all 0.15s ease;

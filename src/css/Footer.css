@@ -1,18 +1,10 @@
-.footer{
-    display: block;
-    margin-top: -4em;
-}
-
-
 .beforefoot{
-    display: flex;
+    display: block;
     width: 100%;
     background: rgba(230, 36, 36, 0.8);
-    height: auto;
-    margin-top: 5em;
 }
 
-.list{
+.choix{
     display: flex;
 }
 
