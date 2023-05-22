@@ -1,38 +1,43 @@
 import React from "react";
 import "../css/Home.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+// import LoginPage from "../components/LoginPage";
 
 export default function Home(){
 
     return(
         <div>
+            <Header/>
             <div className="offre">
                 <div className="particulier">
                     <h1>Notre offre particulier</h1>
                     <p>Apprendre, se former, réflechir à son projet pro, se reconvertir</p>
-                    <a href="/">Formez vous à distance</a>
-                    <a href="/">Devenez agent de restauratin Buffalo Grill</a>
-                    <a href="/">Devenez Technicien-vendeur chez Decathion</a>
-                    <a href="/">Devenez assistante de vie avec Oui Car</a>
+                    <Link to={'/'}>Formez vous à distance</Link>
+                    <Link to={'/'}>Devenez agent de restauratin Buffalo Grill</Link>
+                    <Link to={'/'}>Devenez Technicien-vendeur chez Decathion</Link>
+                    <Link to={'/'}>Devenez assistante de vie avec Oui Car</Link>
                     <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
 
                 <div className="alternance">
                     <h1>Nos formations en alternance</h1>
                     <p>Des formations prêtes à l’emploi sur plus de 200 métiers</p>
-                    <a href="/">Nos formations prêtes à l'emploi</a>
-                    <a href="/">Trouvez votre entreprise</a>
-                    <a href="/">Se former à l'Afpa</a>
-                    <a href="/">Le choix en alternance</a>
+                    <Link to={'/'}>Nos formations prêtes à l'emploi</Link>
+                    <Link to={'/'}>Trouvez votre entreprise</Link>
+                    <Link to={'/'}>Se former à l'Afpa</Link>
+                    <Link to={'/'}>Le choix en alternance</Link>
                     <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
 
                 <div className="recrutement">
                     <h1>Recrutement en Alternance</h1>
                     <p>Un accompagnement complet pour former et recruter vos alternants</p>
-                    <a href="/">Alternance avec l'Afpa</a>
-                    <a href="/">Un recrutement encadré et maîtrisé</a>
-                    <a href="/">Un service clé en main</a>
-                    <a href="/">Une formation tutoral</a>
+                    <Link to="/">Alternance avec l'Afpa</Link>
+                    <Link to="/">Un recrutement encadré et maîtrisé</Link>
+                    <Link to="/">Un service clé en main</Link>
+                    <Link to="/">Une formation tutoral</Link>
                     <button className="btnP" type="text">Découvrir plus</button>
                 </div>
             </div>
@@ -106,6 +111,7 @@ export default function Home(){
                     <img src="https://www.usdole.fr/wp-content/uploads/2019/10/r%C3%A9gion_bourg_fc.jpg" alt="Région bourgogne" />
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

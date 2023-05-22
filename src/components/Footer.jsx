@@ -35,7 +35,8 @@ export default function Footer(){
                         Avec nos visites virtuelles 360° HD, plongez en immersion et découvrez plus de 60 plateaux de formation.
                     </h5>
 
-                    <p>Découvrez nos plateaux de formations
+                    <p>
+                        Découvrez nos plateaux de formations
                         comme si vous y étiez!
                     </p>
                 </div>

@@ -39,7 +39,7 @@
 .particulier h1{
     text-transform: uppercase;
     text-align: center;
-    font-size: 21px
+    font-size: 21px;
 }
 
 .alternance{
@@ -286,7 +286,6 @@ h3{
 }
 
 .partenaires{
-    /* display: none; */
     background: rgba(255, 255, 255, 0.5);
     width: 100%;
 }
@@ -309,5 +308,7 @@ h3{
 
 .list__img{
     max-height: 100px;
+
+    justify-content: space-evenly;
     display: flex;
 }

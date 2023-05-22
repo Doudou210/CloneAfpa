@@ -6,6 +6,8 @@
 
 .choix{
     display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
 h3{
@@ -44,15 +46,14 @@ h3{
 }
 
 .afterfoot{
-    /* margin-top: -2em; */
     width: 100%;
     display: block;
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* background: red; */
 }
 
 .afterfoot img{
-    max-width: 150PX;
+    max-width: 300px;
     margin-left: 4em;
-    justify-content: space-between;
 
 }
