@@ -10,7 +10,7 @@ export default function Header(){
             <header>
 
                 <img src="https://www.alternance-professionnelle.fr/wp-content/uploads/2020/09/LOGO-AFPA-VERT-PNG.png" alt="logo afpa" />
-                <input type="text" placeholder="Recherche" />
+
                 <nav className="nav__bar">
                     <Link to={"/"}>Accueil</Link>
                     <Link to={"/"}>Formations</Link>
