@@ -10,6 +10,14 @@ export default function Home(){
     return(
         <div>
             <Header/>
+
+            <div className="banner">
+            <span class="material-symbols-outlined">search</span>
+                <input className="banner_formation" type="text" placeholder="Une formation, un métier, un mot clé" />
+                <input className="banner_rechercher" type="button" placeholder="Rechercher" />
+                <input className="banner_formation" type="text" placeholder="Afficher toutes nos formations" />
+            </div>
+
             <div className="offre">
                 <div className="particulier">
                     <h1>Notre offre particulier</h1>

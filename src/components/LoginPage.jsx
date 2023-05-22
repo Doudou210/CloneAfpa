@@ -96,11 +96,13 @@ export default function LoginPage(){
                                 I agree to the terms & conditions</label>
                             </div>
 
-                            <button className="btn" type="submit">Regsiter</button>
+                            <button className="btn" type="submit">Register</button>
+
+                            <Link to={'/'}>a</Link>
 
                             <div className="login__register">
                                 <p>Already have an account ? 
-                                    <Link to="/" className="login__link" onClick={()=>{setAlterne(true)}}>Login</Link>
+                                    <button className="login__link" onClick={()=>{setAlterne(true)}}>Login</button>
                                 </p>
                             </div>
 
