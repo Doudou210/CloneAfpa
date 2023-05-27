@@ -47,6 +47,8 @@ table {
 
 body{
   background: navajowhite;
+  transition: background 1s ease;
+
 }
 
 .wrapper{
@@ -62,16 +64,19 @@ body{
 
 
 header{
-  margin: 0 auto;
   width: 100%;
-  height: 80px;
-  left: -1px;
-  top: 20px;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background 1s ease;
 
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: auto;
+
   background: #e62424;
   color: white;
 }
@@ -87,6 +92,8 @@ header .logo img{
 nav{
   display: flex;
   text-align: center;
+  height: auto;
+  width: 100%;
 
   color: white;
 }
