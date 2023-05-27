@@ -14,11 +14,16 @@ export default function Home(){
             <div className="banner">
             <span class="material-symbols-outlined">search</span>
                 <input className="banner_formation" type="text" placeholder="Une formation, un métier, un mot clé" />
-                <input className="banner_rechercher" type="button" placeholder="Rechercher" />
+                <button type="submit" className="btn">Rechercher</button>
                 <input className="banner_formation" type="text" placeholder="Afficher toutes nos formations" />
             </div>
 
+            {/* Première section de tableau */}
+
             <div className="offre">
+
+                {/*Premier tableau*/}
+
                 <div className="particulier">
                     <h1>Notre offre particulier</h1>
                     <p>Apprendre, se former, réflechir à son projet pro, se reconvertir</p>
@@ -29,6 +34,8 @@ export default function Home(){
                     <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
 
+                {/*Deuxième tableau*/}
+
                 <div className="alternance">
                     <h1>Nos formations en alternance</h1>
                     <p>Des formations prêtes à l’emploi sur plus de 200 métiers</p>
@@ -38,6 +45,8 @@ export default function Home(){
                     <Link to={'/'}>Le choix en alternance</Link>
                     <button className="btnP" type="text"> Découvrir plus</button>
                 </div>
+
+                {/*Troisième tableau*/}
 
                 <div className="recrutement">
                     <h1>Recrutement en Alternance</h1>
@@ -50,14 +59,20 @@ export default function Home(){
                 </div>
             </div>
 
+            {/* Deuxième section de tableau */}
+            
             <div className="recherche">
+
+                {/*Premier tableau*/}
+
                 <div className="formation">
                     <h3>Recherche formation</h3>
-                    <input placeholder="Votre metier, domaine" className="btnF"></input>
-                    <input placeholder="Votre region" className="btnF"></input>
-                    <input placeholder="Recherche" className="btnF"></input>
+                    <input placeholder="Votre metier, domaine" type="search" className="btnF"></input>
+                    <input placeholder="Votre region" type="search" className="btnF"></input>
+                    <input placeholder="Recherche" type="button" value={'Rechercher'} className="btnF"></input>
                 </div>
 
+                {/*Deuxième tableau*/}
                 <div className="rencontre">
                     <h3>Venez nous rencontrer</h3>
                     <p>Pour connaître les évènements proches de chez nous,
@@ -65,6 +80,8 @@ export default function Home(){
                     </p>
                     <input placeholder="Indiquez votre ville" className="btnF"/>
                 </div>
+
+                {/*Troisième tableau*/}
 
                 <div className="stats">
                     <div className="resultats">
@@ -92,9 +109,12 @@ export default function Home(){
                 </div>
             </div>
 
+            {/* Info */}
+            
             <div className="info">
                 <h2>Info</h2>
                 <div className="barI"></div>
+
                 <div className="para">
                     <p>Formez vous sur le terrain au métier de technicien vendeur</p>
                     <div className="bar"></div>
@@ -103,6 +123,8 @@ export default function Home(){
                     <p>Reconversion proffessionnelle: focus sur 10 métiers qui marquent le monde</p>
                 </div>
             </div>
+
+            {/* Partenaires */}
 
             <div className="partenaires">
                 <h2>Nos partenaires</h2>
