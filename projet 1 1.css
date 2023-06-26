@@ -42,12 +42,14 @@ table {
   border-spacing: 0;
 }
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*Body*/
 
 body{
-  background: navajowhite;
-  transition: background 1s ease;
+  background: white;
 
 }
 
@@ -181,8 +183,6 @@ nav ul li:hover{
 .banner h2{
   width: 450px;
   height: 60px;
-  left: 509px;
-  top: 235px;
   margin: 0 auto;
   margin-top: -10px;
   border-radius: 10px;
@@ -215,11 +215,9 @@ nav ul li:hover{
 /*tableau 1 & tableau 2 & tableau 3*/
 
 .container--content .content{
-  border: 2px solid #9e0101;
   width: 453px;
   height: 464px;
-  left: 20px;
-  top: 343px;
+  
   border-radius: 10px;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
