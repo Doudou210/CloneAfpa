@@ -29,3 +29,31 @@
     </section>
 </body>
 </html>
+
+<?php
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    require "bd.php";
+
+
+   //Vérifications des données saisies par l'utilisateur
+
+   if ($email!='' && $password!='') {
+
+        //les éléménts à vérifier.
+        $request = $bd->prepare("SELECT * FROM user WHERE email=:email AND password=:password");
+        $request->execute([
+            "email" => $email,
+            "password" => $password
+        ]);
+        //Récuperer les éléments vérifiés 
+        $respond =$request -> fetch();
+
+        if (is_array($respond)===true) {
+            header("Location: projet 1 1.html"); 
+        }else {
+            $error_msg = "Email ou Password invalide";
+            header("Location: connexion.php ? error{$error_msg}");
+        }
+   }
