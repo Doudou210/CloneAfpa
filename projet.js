@@ -13,11 +13,13 @@ window.onscroll= () =>{
     let scroll = window.pageYOffset;
 
     if (scroll < 10) {
-        $head.style.backgroundColor = 'red';
-        $body.style.backgroundColor = 'novajowhite';
+        $head.style.background = '#D9D9D9';
+        $body.style.background = 'novajowhite';
+        $materialSO.style.color='black'
     }
     else {
         // transparent
-        $head.style.backgroundColor = 'transparent';
+        $head.style.background = '#D9D9D9';
+        // $head.style.background = 'transparent';
     } 
 }

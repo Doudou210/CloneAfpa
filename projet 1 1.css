@@ -77,12 +77,16 @@ header{
   align-items: center;
   position: fixed;
   display: flex;
-  height: auto;
+  height: 10vh;
 
-  background: #e62424;
-  color: white;
+  background: #D9D9D9;
+  color: black;
 }
 
+header.active{
+  background: transparent;
+  color: black;
+}
 header .logo img{
   width: 141px;
   height: 76px;
@@ -114,7 +118,7 @@ nav ul{
   justify-content: space-between;
 }
 
-nav ul li {
+nav ul li{
   margin-right: 60px;
   font-size: 22px;
   margin: 0 auto;
@@ -122,10 +126,22 @@ nav ul li {
   
   display: inline-block;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   font-family: arial, serif;
   cursor: pointer;
-  margin-left: 2em;
+  margin-left: 1em;
+  border-radius: 5px;
+  border: 2px solid black;
+  
+  background: white;
+  color: black;
+  padding: 1em;
+}
+
+nav ul li.actived{
+  background: green;
+  border: 2px solid white;
+  color: white;
 }
 
 nav ul li:hover{
@@ -144,15 +160,14 @@ nav ul li:hover{
 /*barre de recherche*/
 
 .banner{
-  margin: 0 auto;
-  margin-top: 10em;
-  border-radius: 10px;
   width: 1040px;
   height: 174px;
-  left: 210px;
-  top: 140px;
 
-  background: rgba(177, 138, 138, 0.7);
+  margin: 0 auto;
+  margin-top: 10em;
+  border-radius: 5px;
+
+  background: gray;
 }
 
 .banner .search .rechercher{
@@ -161,8 +176,8 @@ nav ul li:hover{
   left: 390px;
   top: 158px;
   margin: 25px auto;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 5px;
+  padding: 1em;
 
   position: sticky;
   text-align: center;
@@ -173,11 +188,7 @@ nav ul li:hover{
   float: center;
 
   margin-right: -50px;
-  left: -58%;
-  right: 69.93%;
-  top: 6.88%;
-  bottom: 92.07%;
-  padding: 20px;
+  padding: 1em;
 }
 
 .banner h2{
@@ -185,9 +196,9 @@ nav ul li:hover{
   height: 60px;
   margin: 0 auto;
   margin-top: -10px;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: transform 0.5s;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   
   background: #e62424;
   text-align: center;
@@ -221,6 +232,7 @@ nav ul li:hover{
   border-radius: 10px;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
 }
 
 .container--content .content p{
