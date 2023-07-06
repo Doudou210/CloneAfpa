@@ -46,20 +46,20 @@ table {
   margin: 0;
   padding: 0;
 }
+
 /*Body*/
 
 body{
   background: white;
-
+  font-family: arial, serif;
 }
 
 .wrapper{
+  width: 90%;
+  /* background: rebeccapurple; */
   margin: 0 auto;
-  width: 1440px;
-  padding: 10px;
-  font-family: arial, serif;
-  }
-
+  /* padding: 10px; */
+}
 
 
 /*header*/
@@ -160,8 +160,8 @@ nav ul li:hover{
 /*barre de recherche*/
 
 .banner{
-  width: 1040px;
-  height: 174px;
+  width: 60%;
+  height: auto;
 
   margin: 0 auto;
   margin-top: 10em;
@@ -171,42 +171,40 @@ nav ul li:hover{
 }
 
 .banner .search .rechercher{
-  width: 680px;
+  width: 60%;
   height: 60px;
-  left: 390px;
-  top: 158px;
   margin: 25px auto;
   border-radius: 5px;
-  padding: 1em;
+  padding: 0.1em;
 
-  position: sticky;
+  /* position: relative; */
   text-align: center;
 }
 
-.banner .search span{
+/* .banner .search span{
   position: sticky;
   float: center;
 
   margin-right: -50px;
   padding: 1em;
-}
+} */
 
-.banner h2{
-  width: 450px;
+.banner button{
+  width: 20%;
   height: 60px;
-  margin: 0 auto;
-  margin-top: -10px;
+  top: 15em;
+  padding: 0.5em;
+  /* margin-left: 9em; */
+  /* margin: 0 auto; */
+  position: absolute;
   border-radius: 5px;
   transition: transform 0.5s;
-  /* border: 2px solid white; */
   
-  background: #e62424;
+  background: green;
+  color: white;
+  cursor: pointer;
   text-align: center;
   align-items: center;
-}
-
-.banner h2:hover{
-  transform: scale(1.1);
 }
 
 
@@ -216,20 +214,22 @@ nav ul li:hover{
 
 .container .container--content{
   display: flex;
+  width: 100%;
   height: 600px;
+  margin: 0 auto;
   margin-top: 7em;
-  justify-content: space-between;
-
+  justify-content: space-evenly;
+  
 }
 
 
 /*tableau 1 & tableau 2 & tableau 3*/
 
 .container--content .content{
-  width: 453px;
-  height: 464px;
+  width: 400px;
+  height: 450px;
   
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid black;
@@ -263,20 +263,19 @@ nav ul li:hover{
   line-height: 24px;
 }
 
-.content .content3{
+.content .content3 button{
   width: 326px;
   height: 48px;
-  left: 81px;
-  top: 738px;
   margin: 0 auto;
   margin-top: 50px;
-  padding: 10px;
-
+  /* padding: 10px; */
+  padding: 0.2em;
+  
   background: #E62424;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   align-items: center;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease-in-out;
 }
 
 .content .content3:hover{
@@ -284,27 +283,26 @@ nav ul li:hover{
 }
 
 
-/*deuxième contenu tableau*/
-
-
+/*DEUXIEME SECTION DE TABLEAU*/
 
 .container2 .table{
   height: 600px;
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
 }
 
 
 /*tableau 1*/
 
 
-.avantmetier{
-  width: 453px;
-  height: 464px;
-  left: 20px;
+.table .avantmetier{
+  width: 400px;
+  height: 450px;
   margin-top: -7em;
   border-radius: 10px;
+  border: 2px solid black;
   
   text-align: center;
 }
@@ -315,8 +313,6 @@ nav ul li:hover{
   height: 464px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  
-  /* border: 2px solid blue; */
 }
 
 .avantmetier .metier h2{
@@ -424,11 +420,14 @@ h3{
 
 
 .cata{
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: salmon;
   margin-top: 1em;
   width: 451px;
   height: 196px;
   border-radius: 10px;
+  position: absolute;
+  border: 2px solid black;
 }
 
 .cata h1{
@@ -446,7 +445,7 @@ h3{
 
 /*Info*/
 
-.info{
+/* .info{
     background: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: auto;
@@ -480,11 +479,10 @@ h3{
   height: 1em;
   width: 0.2em;
   margin-top: -0.4em;
-}
+} */
 
 
 /*Partenaires*/
-
 
 .partenaires{
   background: rgba(255, 255, 255, 0.5);
@@ -495,9 +493,7 @@ h3{
 }
 
 .partenaires h1{
-  /* font-size: 19px; */
   text-align: center;
-  /* font-size: bold; */
   font-weight: 600;
   width: 100%;
 }
@@ -519,24 +515,27 @@ h3{
 
 /* footer*/
 
- .footer ul {
-   width: 100%;
-   height: 200px;
-  margin: 0 auto;
-  background: #e62424;
-  text-align: center;
-  font-size: 20px;
-  font-weight: normal;
+.footer{
+  width: 100%;
+}
+
+.footer ul {
+  width: 100%;
+  height: 200px;
   border-radius: 10px;
-  }
+  font-size: 20px;
+
+  /* margin: 0 auto; */
+  background: green;
+  text-align: center;
+  font-weight: normal;
+  justify-content: space-between;
+}
   
 
  .footer ul h2{
-  margin: 29Px 463px;
   color: white;
-/*  font-size: 20px;*/
   padding: 10px;
-
 }
 
 .footer ul li {
