@@ -61,9 +61,7 @@ body{
   /* padding: 10px; */
 }
 
-
 /*header*/
-
 
 header{
   width: 100%;
@@ -72,13 +70,13 @@ header{
   left: 0;
   z-index: 1;
   transition: background 1s ease;
-
-  justify-content: space-between;
+  
+  justify-content: space-evenly;
   align-items: center;
   position: fixed;
   display: flex;
   height: 10vh;
-
+  
   background: #D9D9D9;
   color: black;
 }
@@ -87,20 +85,20 @@ header.active{
   background: transparent;
   color: black;
 }
+
 header .logo img{
   width: 141px;
   height: 76px;
-  left: 38px;
-  top: 24px;
 }
 
 /*Nav*/
+
 nav{
   display: flex;
   text-align: center;
   width: 100%;
   height: auto;
-
+  
   color: white;
 }
 
@@ -112,50 +110,52 @@ nav ul .material-symbols-outlined{
   display: none;
 }
 
-
 nav ul{
+  width: 100%;
   display: block;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 nav ul li{
   margin-right: 60px;
   font-size: 22px;
   margin: 0 auto;
-  transition: transform 0.5s;
   
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-family: arial, serif;
   cursor: pointer;
-  margin-left: 1em;
+  margin-left: 1.5em;
   border-radius: 5px;
-  border: 2px solid black;
   
   background: white;
   color: black;
-  padding: 1em;
+  padding: 0.7em;
 }
 
 nav ul li.actived{
   background: green;
   border: 2px solid white;
   color: white;
-}
-
-nav ul li:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
+  transition: background 1s ease-in-out;
 }
 
 .poss{
-  border-radius: 10px;
-  padding: 10px;
-
-  background: red;
-  color: white;
+  background: none;
+  padding: 1em;
+}
+.poss a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
 }
 
+.poss a:hover{
+  color: white;
+  transform: scale(1.1);
+}
 
 /*barre de recherche*/
 
@@ -177,29 +177,19 @@ nav ul li:hover{
   border-radius: 5px;
   padding: 0.1em;
 
-  /* position: relative; */
   text-align: center;
 }
-
-/* .banner .search span{
-  position: sticky;
-  float: center;
-
-  margin-right: -50px;
-  padding: 1em;
-} */
 
 .banner button{
   width: 20%;
   height: 60px;
-  top: 15em;
+  top: 14em;
   padding: 0.5em;
-  /* margin-left: 9em; */
-  /* margin: 0 auto; */
-  position: absolute;
+
   border-radius: 5px;
   transition: transform 0.5s;
   
+  position: absolute;
   background: green;
   color: white;
   cursor: pointer;
@@ -218,8 +208,8 @@ nav ul li:hover{
   height: 600px;
   margin: 0 auto;
   margin-top: 7em;
+
   justify-content: space-evenly;
-  
 }
 
 
@@ -238,7 +228,6 @@ nav ul li:hover{
 .container--content .content p{
   text-align: start;
   margin-left: 0.5em;
-  
 }
 .content .content1 {
   text-align: center;
@@ -256,11 +245,22 @@ nav ul li:hover{
   margin-left: -1em;
 }
 
-.content .content2 p{
+.content .content2 ul{
   margin-left: 0.5em;
-  text-align: start;
+}
+
+.content .content2 ul li{
   margin-top: 20px;
-  line-height: 24px;
+  line-height: 30px;
+  
+  text-align: start;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.content .content2 ul li:hover{
+  font-size: 22px;
+  transform: scale(0.9);
 }
 
 .content .content3 button{
@@ -268,12 +268,11 @@ nav ul li:hover{
   height: 48px;
   margin: 0 auto;
   margin-top: 50px;
-  /* padding: 10px; */
   padding: 0.2em;
+  border-radius: 5px;
   
   background: #E62424;
   color: white;
-  border-radius: 5px;
   align-items: center;
   transition: transform 0.5s ease-in-out;
 }
@@ -286,22 +285,20 @@ nav ul li:hover{
 /*DEUXIEME SECTION DE TABLEAU*/
 
 .container2 .table{
-  height: 600px;
+  width: 100%;
   display: flex;
-  margin-top: 20px;
+  margin-bottom: 1em;
   justify-content: space-evenly;
 
 }
 
-
 /*tableau 1*/
-
 
 .table .avantmetier{
   width: 400px;
   height: 450px;
   margin-top: -7em;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid black;
   
   text-align: center;
@@ -324,23 +321,23 @@ nav ul li:hover{
   text-align: center;
   margin: 0 auto;
   padding: 15px;
-
+  
   font-family: 'Arial';
   font-style: normal;
-
+  
   color: rgba(0, 0, 0, 0.6);
 }
 
 .metier .material-symbols-outlined{
   width: 30px;
   height: 30px;
-  top: 883px;
   float: right;
-
-  margin-top: -0.5em;
+  
+  margin-top: -0.8em;
 }
 
 /*input*/
+
 .btnF{
   display: block;
   margin: 0 auto;
@@ -352,24 +349,28 @@ nav ul li:hover{
   margin-bottom: 1em;
   padding: 0.5em;
   text-align: center;
+  align-items: center;
   
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   color: rgba(0, 0, 0, 0.6);
 }
 
+.avantmetier .metier button{
+  width: 50%;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 1.5em 0 greenyellow;
+  
+  background: green;
+  color: white;
+}
 
 /*Tableau 2*/
 
 .rencontre{
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0 auto;
-    display: block;
-    
-    height: 464px;
-    left: 20px;
-    top: 166px;
-    border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
 }
 
 .rencontre p{
@@ -384,132 +385,92 @@ nav ul li:hover{
 .rencontre .material-symbols-outlined{
   width: 30px;
   height: 30px;
-  top: 883px;
-  margin-top: -0.5em;
+  margin-top: -0.8em;
 
   float: right;
 }
 /*Tableau 3*/
 
 .resultats{
+  width: 400px;
+  margin-top: -7em;
+  height: 250px;
+  border-radius: 5px;
+  border: 2px solid black;
+  
+  
   background: rgba(255, 255, 255, 0.5);
-  width: 453px;
-    height: 252px;
-  border-radius: 10px;
-  align-items: center;
 }
 
 h3{
+  text-align: center;
   color: rgba(0, 0, 0, 0.6);
   margin-top: 0.5em;
 }
 
-.resultats h1{
-  margin-top: 1em;
-  margin-left: -10em;
+.resultats span{
   font-size: 30px;
   font-weight: 550;
   color: hsla(95, 59%, 47%, 1);
 }
 
-.resultats p{
-  margin-left: 5EM;
+.resultats ul{
   line-height: 3em;
-  margin-top: -2.5em;
+  box-sizing: border-box;
 }
-
 
 .cata{
-  /* background: rgba(255, 255, 255, 0.5); */
-  background: salmon;
   margin-top: 1em;
-  width: 451px;
-  height: 196px;
-  border-radius: 10px;
-  position: absolute;
+  width: 400px;
+  height: 173px;
+  border-radius: 5px;
   border: 2px solid black;
+  
+  text-align: center;
 }
 
-.cata h1{
-  margin-top: 1em;
-  margin-left: -10em;
+.cata ul{
+  line-height: 3em;
+}
+
+.cata span{
+  width: 100%;
+  
+  padding: 1em;
   font-size: 30px;
   font-weight: 550;
   color: hsla(95, 59%, 47%, 1);
 }
-.cata p{
-  margin-left: 3em;
-  line-height: 3em;
-  margin-top: -2.5em;
-}
-
-/*Info*/
-
-/* .info{
-    background: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
-
-    margin-top: -12.5em;
-    margin-bottom: 2em;
-}
-
-.info .para{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.info h2{
-  text-align: center;
-  font-weight: 600;
-  padding: 1em;
-}
-.barI{
-  width: 100%;
-  height: 0.2em;
-  margin-bottom: 1em;
-
-  background: black;
-}
-.bar{
-  display: block;
-  background: black;
-  height: 1em;
-  width: 0.2em;
-  margin-top: -0.4em;
-} */
-
 
 /*Partenaires*/
 
 .partenaires{
-  background: rgba(255, 255, 255, 0.5);
   width: 100%;
   border-radius: 10px;
-
-  display: block;
+  
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .partenaires h1{
-  text-align: center;
-  font-weight: 600;
   width: 100%;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .partenaires p {
   width: 100%;
-  font-family: 'Arial';
-
-  /* font-weight: 300; */
   line-height: 25px;
+  margin-top: 1em;
+  
   text-align: center;
 }
 
 .list__img img{
-  max-width: 100px;
+  max-width: 90px;
   margin-left: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 
@@ -517,62 +478,44 @@ h3{
 
 .footer{
   width: 100%;
+  background: red;
+  border-radius: 5px;
+}
+
+.footer h2{
+  color: white;
+  padding: 10px;
+  
+  text-align: center;
+  font-size: 20px;
 }
 
 .footer ul {
   width: 100%;
-  height: 200px;
-  border-radius: 10px;
   font-size: 20px;
 
-  /* margin: 0 auto; */
-  background: green;
-  text-align: center;
+  text-align:center;
   font-weight: normal;
-  justify-content: space-between;
-}
-  
-
- .footer ul h2{
-  color: white;
-  padding: 10px;
+  display: flex;
 }
 
 .footer ul li {
-  display: inline-flex;
-  box-sizing: border-box;
-  width: 187px;
-  height: 30px;
-  margin: 0 auto;
   padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  
   color: white;
   font-weight: normal;
 }
-.footer ul li p{
-  text-align: start;
-  width: 100%;
-  justify-content: space-between;
-  margin-left: 2em;
-}
-  
-.footer ul li .material-symbols-outlined {
-  margin-top: 1em;
-  margin-left: -1em;
-
-}
 
 .contacts{
-  display: flex;
   width: 100%;
-  gap: 2em;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5em;
 
-}
-.contacts img{
-  max-width: 50px;
+  display: flex;
   justify-content: space-evenly;
-  gap: 1em;
+  
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .contactR{
@@ -580,19 +523,33 @@ h3{
 }
 
 .contactR img{
-  max-width: 25px;
-  margin-left: 2.5em;
+  max-width: 50px;
+  margin-top: 1em;
 }
 
 .contactV{
   width: 30%;
 }
+
+.contactV h3{
+  margin-bottom: 1em;
+}
+
+.contactV h5{
+  line-height: 20px;
+}
+
 .contactV p{
   color: red;
+  margin-top: 1em;
 }
 
 .contactP{
   width: 30%;
+}
+.contactP p{
+  margin-top: 1em;
+  line-height: 20px;
 }
 
 .afterfoot{
@@ -601,7 +558,7 @@ h3{
 }
 
 .afterfoot img{
-  max-width: 300px;
+  max-width: 200px;
   margin-left: 4em;
-
+  justify-content: space-between;
 }
