@@ -1,5 +1,4 @@
 let $search = document.querySelector('.banner');
-
 let $materialSO = document.querySelector('.material-symbols-outlined');
 
 $materialSO.addEventListener('click', function(){
@@ -16,7 +15,6 @@ window.onscroll= () =>{
     }
     else {
         // transparent
-        // $head.style.background = 'red';
         $head.style.background = 'transparent';
     } 
 }

@@ -1,0 +1,94 @@
+@media screen and (max-width: 800px){
+    body{
+        font-size: 22px;
+    }
+    /* .wrapper{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    } */
+    
+    header{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid blueviolet;
+        padding: 1em;
+
+        align-items: center;
+    }
+
+    header span{
+        margin-left: 10em;
+        display: block;
+        cursor: pointer;
+    }
+
+    header img{
+        max-width: 200px;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    nav.on{
+        width: 100%;
+        top: 5em;
+        display: flex;
+        /* justify-content: space-between; */
+        position: absolute;
+        color: black;
+    }
+
+    /* nav.off{
+        display: none;
+    } */
+
+    nav ul{
+        width: 100%;
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        justify-content: space-between;
+    }
+
+    /*Container*/
+
+    /*Première section de tableau*/
+    .container{
+        width: 100%;
+    }
+
+    .container .container--content{
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .container--content .content{
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    /*Deuxième section de tableau*/
+
+    .container2 .table{
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+        top: 10em;
+    }
+    
+    .table .avantmetier{
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
